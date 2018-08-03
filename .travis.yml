@@ -2,5 +2,19 @@ language: java
 
 jdk:
   - oraclejdk8
-install: cd wxapi && mvn install -DskipTests=true -Dmaven.javadoc.skip=true
-script: mvn package
+
+before_install:
+#  - mvn install -Dmaven.javadoc.skip=true
+   - "echo skipped"
+install:
+  - "echo skipped"
+script:
+#  - "echo skipped" 
+  - mvn install -Dmaven.javadoc.skip=true
+# - mvn deploy
+notifications:
+  email:
+    recipients:
+      - ******@***.com
+    #on_success: [always|never|change]  default: change
+    #on_failure: [always|never|change]  default: always

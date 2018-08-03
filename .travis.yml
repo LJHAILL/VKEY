@@ -14,7 +14,7 @@ script:
 # - mvn deploy
 notifications:
   email:
-    recipients:
-      - ******@***.com
+    recipients:s
+      - 1569376982@qq.com
     #on_success: [always|never|change]  default: change
     #on_failure: [always|never|change]  default: always
